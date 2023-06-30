@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from LuffyMusic import Carbon, YouTube, app
-from LuffyMusic.core.call import Anon
+from LuffyMusic.core.call import Luffy
 from LuffyMusic.misc import db
 from LuffyMusic.utils.database import (add_active_chat,
                                        add_active_video_chat,
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Anon.force_stop_stream(chat_id)
+        await Luffy.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
