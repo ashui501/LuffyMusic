@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from LuffyMusic import app
-from LuffyMusic.core.call import Anon
+from LuffyMusic.core.call import Luffy
 from LuffyMusic.utils import bot_sys_stats
 from LuffyMusic.utils.decorators.language import language
 from LuffyMusic.utils.inline.play import close_keyboard
@@ -25,7 +25,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"],
     )
     start = datetime.now()
-    pytgping = await Anon.ping()
+    pytgping = await Luffy.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
