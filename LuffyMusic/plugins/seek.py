@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import YouTube, app
-from AnonX.core.call import Anon
-from AnonX.misc import db
-from AnonX.utils import AdminRightsCheck, seconds_to_min
+from LuffyMusic import YouTube, app
+from LuffyMusic.core.call import Anon
+from LuffyMusic.misc import db
+from LuffyMusic.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
