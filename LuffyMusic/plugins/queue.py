@@ -11,7 +11,7 @@ from config import BANNED_USERS
 from strings import get_command
 from LuffyMusic import app
 from LuffyMusic.misc import db
-from LuffyMusic.utils import (Anonbin, get_channeplayCB,
+from LuffyMusic.utils import (Luffybin, get_channeplayCB,
                               seconds_to_min)
 from LuffyMusic.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
@@ -208,7 +208,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "📌" in msg:
             msg = msg.replace("📌", "")
-        link = await Anonbin(msg)
+        link = await Luffybin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )
