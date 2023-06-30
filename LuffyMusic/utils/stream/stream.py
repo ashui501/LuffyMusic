@@ -16,7 +16,7 @@ from LuffyMusic.utils.exceptions import AssistantErr
 from LuffyMusic.utils.inline.play import (stream_markup, queue_markup,
                                           telegram_markup)
 from LuffyMusic.utils.inline.playlist import close_markup
-from LuffyMusic.utils.pastebin import Anonbin
+from LuffyMusic.utils.pastebin import Luffybin
 from LuffyMusic.utils.stream.queue import put_queue, put_queue_index
 from LuffyMusic.utils.thumbnails import gen_thumb, gen_qthumb
 
