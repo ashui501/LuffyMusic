@@ -11,7 +11,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL,
                     MUSIC_BOT_NAME, adminlist)
 from LuffyMusic import YouTube, app
-from LuffyMusic.core.call import Anon
+from LuffyMusic.core.call import Luffy
 from LuffyMusic.misc import SUDOERS, db
 from LuffyMusic.utils import bot_sys_stats
 from LuffyMusic.utils.database import (
@@ -120,7 +120,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.pause_stream(chat_id)
+        await Luffy.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
             reply_markup=close_keyboard
@@ -181,7 +181,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention, CallbackQuery.message.chat.title)
                 )
                 try:
-                    return await Anon.stop_stream(chat_id)
+                    return await Luffy.stop_stream(chat_id)
                 except:
                     return
         except:
