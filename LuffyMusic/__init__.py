@@ -1,4 +1,4 @@
-from LuffyMusic.core.bot import LuffyXBot
+from LuffyMusic.core.bot import LuffyMusicbot
 from LuffyMusic.core.dir import dirr
 from LuffyMusic.core.git import git
 from LuffyMusic.core.userbot import Userbot
@@ -18,7 +18,7 @@ heroku()
 sudo()
 
 # Clients
-app = LuffyXBot()
+app = LuffyMusicBot()
 userbot = Userbot()
 
 
