@@ -8,9 +8,9 @@ from pyrogram.raw import types
 import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
-from AnonX import app, userbot
-from AnonX.misc import SUDOERS
-from AnonX.utils.database import (get_active_chats,
+from LuffyMusic import app, userbot
+from LuffyMusic.misc import SUDOERS
+from LuffyMusic.utils.database import (get_active_chats,
                                        get_authuser_names, get_client,
                                        get_particular_top,
                                        get_served_chats,
@@ -18,8 +18,8 @@ from AnonX.utils.database import (get_active_chats,
                                        is_cleanmode_on, set_queries,
                                        update_particular_top,
                                        update_user_top)
-from AnonX.utils.decorators.language import language
-from AnonX.utils.formatters import alpha_to_int
+from LuffyMusic.utils.decorators.language import language
+from LuffyMusic.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
