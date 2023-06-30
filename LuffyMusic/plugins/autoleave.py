@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from AnonX import app
-from AnonX.core.call import Anon, autoend
-from AnonX.utils.database import (get_client, is_active_chat,
+from LuffyMusic import app
+from LuffyMusic.core.call import Anon, autoend
+from LuffyMusic.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
