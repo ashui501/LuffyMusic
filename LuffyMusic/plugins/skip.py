@@ -5,7 +5,7 @@ import config
 from config import BANNED_USERS
 from strings import get_command
 from LuffyMusic import YouTube, app
-from LuffyMusic.core.call import Anon
+from LuffyMusic.core.call import Luffy
 from LuffyMusic.misc import db
 from LuffyMusic.utils.database import get_loop
 from LuffyMusic.utils.decorators import AdminRightsCheck
@@ -63,7 +63,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_keyboard
                                     )
-                                    await Anon.stop_stream(chat_id)
+                                    await Luffy.stop_stream(chat_id)
                                 except:
                                     return
                                 break
