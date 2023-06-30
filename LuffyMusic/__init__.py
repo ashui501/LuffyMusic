@@ -1,8 +1,8 @@
-from AnonX.core.bot import AnonXBot
-from AnonX.core.dir import dirr
-from AnonX.core.git import git
-from AnonX.core.userbot import Userbot
-from AnonX.misc import dbb, heroku, sudo
+from LuffyMusic.core.bot import LuffyXBot
+from LuffyMusic.core.dir import dirr
+from LuffyMusic.core.git import git
+from LuffyMusic.core.userbot import Userbot
+from LuffyMusic.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
@@ -18,7 +18,7 @@ heroku()
 sudo()
 
 # Clients
-app = AnonXBot()
+app = LuffyXBot()
 userbot = Userbot()
 
 
