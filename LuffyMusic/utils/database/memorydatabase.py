@@ -9,7 +9,7 @@ playmodedb = mongodb.playmode
 playtypedb = mongodb.playtypedb
 langdb = mongodb.language
 authdb = mongodb.adminauth
-videodb = mongodb.anonvideocalls
+videodb = mongodb.luffyvideocalls
 onoffdb = mongodb.onoffper
 autoenddb = mongodb.autoend
 
