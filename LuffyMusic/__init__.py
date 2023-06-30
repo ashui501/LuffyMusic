@@ -18,7 +18,7 @@ heroku()
 sudo()
 
 # Clients
-app = LuffyMusicBot()
+app = LuffyXbot()
 userbot = Userbot()
 
 
