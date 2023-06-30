@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from LuffyMusic import app
-from LuffyMusic.core.call import Anon
+from LuffyMusic.core.call import Luffy
 from LuffyMusic.utils.database import is_music_playing, music_on
 from LuffyMusic.utils.decorators import AdminRightsCheck
 from LuffyMusic.utils.inline.play import close_keyboard
@@ -26,7 +26,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await Anon.resume_stream(chat_id)
+    await Luffy.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.first_name),
         reply_markup=close_keyboard
