@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from AnonX import app
-from AnonX.misc import SUDOERS
-from AnonX.utils.database import add_off, add_on
-from AnonX.utils.decorators.language import language
+from LuffyMusic import app
+from LuffyMusic.misc import SUDOERS
+from LuffyMusic.utils.database import add_off, add_on
+from LuffyMusic.utils.decorators.language import language
 
 # Commands
 VIDEOMODE_COMMAND = get_command("VIDEOMODE_COMMAND")
