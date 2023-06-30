@@ -89,7 +89,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Anon.join_call(
+                await Luffy.join_call(
                     chat_id, original_chat_id, file_path, video=status, image=thumbnail
                 )
                 await put_queue(
@@ -177,7 +177,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await Luffy.join_call(
                 chat_id, original_chat_id, file_path, video=status, image=thumbnail
             )
             await put_queue(
@@ -236,7 +236,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await Luffy.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -290,7 +290,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await Luffy.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -352,7 +352,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Anon.join_call(
+            await Luffy.join_call(
                 chat_id, original_chat_id, file_path, video=status, image=thumbnail if thumbnail else None
             )
             await put_queue(
@@ -406,7 +406,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anon.join_call(
+            await Luffy.join_call(
                 chat_id,
                 original_chat_id,
                 link,
