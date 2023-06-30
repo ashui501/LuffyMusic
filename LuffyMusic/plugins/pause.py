@@ -3,11 +3,11 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import app
-from AnonX.core.call import Anon
-from AnonX.utils.database import is_music_playing, music_off
-from AnonX.utils.decorators import AdminRightsCheck
-from AnonX.utils.inline.play import close_keyboard
+from LuffyMusic import app
+from LuffyMusic.core.call import Anon
+from LuffyMusic.utils.database import is_music_playing, music_off
+from LuffyMusic.utils.decorators import AdminRightsCheck
+from LuffyMusic.utils.inline.play import close_keyboard
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
