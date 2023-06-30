@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from AnonX import YouTube, app
-from AnonX.utils.channelplay import get_channeplayCB
-from AnonX.utils.decorators.language import languageCB
-from AnonX.utils.stream.stream import stream
+from LuffyMusic import YouTube, app
+from LuffyMusic.utils.channelplay import get_channeplayCB
+from LuffyMusic.utils.decorators.language import languageCB
+from LuffyMusic.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
