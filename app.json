@@ -1,12 +1,12 @@
 {
-    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
+    "name": "ʟᴜғғʏ ᴍᴜsɪᴄ",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "logo": "https://te.legra.ph/file/9d1ba07a271751ef552a6.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "AnonX",
+    "LuffyMusic",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
